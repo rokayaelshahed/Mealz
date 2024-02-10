@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     private  lateinit var  viewModel :MealsViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.i("mmm","test")
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
         val rv = binding.categoryRv
         viewModel.getMeals()
